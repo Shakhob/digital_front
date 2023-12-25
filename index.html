@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="shortcut icon" href="images/header_logo.png" type="image/x-icon">
+    <title>Digital goverment</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="container">
+                <div class="header_logo">
+                    <a href="#">
+                        <img src="images/header_logo.png" alt="">
+                    </a>
+                    <div class="logo_text">
+                        ЦифровоЕ правительствО
+                        <span>Республики Узбекистан</span>
+                    </div>
+                </div>
+                <div class="navs">
+                    <nav>
+                        <a href="#">Главная</a>
+                        <a href="#">Решения</a>
+                        <a href="#">Рейтиги</a>
+                        <a href="#">Контакты</a>
+                    </nav>
+
+                    <div class="dropdown">
+                        <a href="#" class="language_option dropdown-btn">
+                            <span>РУ</span>
+                            <img src="images/language_arrow.png" alt="">
+                        </a>
+                        <div class="dropdown-content">
+                            <a href="#">UZ</a>
+                            <a href="#">EN</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu_hamburg">
+                    <div class="hamburg-menu" id="hamburg-menu">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
+
+                    <div class="menu-content">
+                        <div class="container">
+                            <div class="row_language">
+                                <a href="#">UZ</a>
+                                <a href="#" class="active">РУ</a>
+                                <a href="#">EN</a>
+                            </div>
+                            <div class="accordion">
+                                <div class="accordion-item">
+                                    <a href="#" class="accordion-header link_item">
+                                        Решения
+                                    </a>
+                                    <div class="accordion-content">
+                                        <a href="#">Решения</a>
+                                    </div>
+                                </div>
+                                <a href="#" class="link_item">
+                                    Рейтиги
+                                </a>
+                                <a href="#" class="link_item">
+                                    Полезное
+                                </a>
+                                <a href="#" class="link_item">
+                                    Контакты
+                                </a>
+                            </div>
+
+                            <div class="social_links">
+                                <a href="#">
+                                    <img src="images/youtube.png" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="images/facebool.png" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="images/instagram.png" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="images/twitter.png" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="images/telegram.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="fixed_links">
+            <nav class="tabs">
+                <a href="#">
+                    <svg width="40" height="40" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="40" height="40" rx="20" fill="#AAAAAA"/>
+                        <path d="M18 23L23.19 20L18 17V23ZM29.56 15.17C29.69 15.64 29.78 16.27 29.84 17.07C29.91 17.87 29.94 18.56 29.94 19.16L30 20C30 22.19 29.84 23.8 29.56 24.83C29.31 25.73 28.73 26.31 27.83 26.56C27.36 26.69 26.5 26.78 25.18 26.84C23.88 26.91 22.69 26.94 21.59 26.94L20 27C15.81 27 13.2 26.84 12.17 26.56C11.27 26.31 10.69 25.73 10.44 24.83C10.31 24.36 10.22 23.73 10.16 22.93C10.09 22.13 10.06 21.44 10.06 20.84L10 20C10 17.81 10.16 16.2 10.44 15.17C10.69 14.27 11.27 13.69 12.17 13.44C12.64 13.31 13.5 13.22 14.82 13.16C16.12 13.09 17.31 13.06 18.41 13.06L20 13C24.19 13 26.8 13.16 27.83 13.44C28.73 13.69 29.31 14.27 29.56 15.17Z" fill="white"/>
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg width="40" height="40" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="40" height="40" rx="20" fill="#AAAAAA"/>
+                        <path d="M22 21.5H24.5L25.5 17.5H22V15.5C22 14.47 22 13.5 24 13.5H25.5V10.14C25.174 10.097 23.943 10 22.643 10C19.928 10 18 11.657 18 14.7V17.5H15V21.5H18V30H22V21.5Z" fill="white"/>
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg width="40" height="40" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="40" height="40" rx="20" fill="#AAAAAA"/>
+                        <path d="M21.0281 10.0012C21.7578 9.99843 22.4876 10.0058 23.2171 10.0232L23.4111 10.0302C23.6351 10.0382 23.8561 10.0482 24.1231 10.0602C25.1871 10.1102 25.9131 10.2782 26.5501 10.5252C27.2101 10.7792 27.7661 11.1232 28.3221 11.6792C28.8305 12.1788 29.2239 12.7832 29.4751 13.4502C29.7221 14.0872 29.8901 14.8142 29.9401 15.8782C29.9521 16.1442 29.9621 16.3662 29.9701 16.5902L29.9761 16.7842C29.9939 17.5134 30.0015 18.2428 29.9991 18.9722L30.0001 19.7182V21.0282C30.0026 21.758 29.9949 22.4877 29.9771 23.2172L29.9711 23.4112C29.9631 23.6352 29.9531 23.8562 29.9411 24.1232C29.8911 25.1872 29.7211 25.9132 29.4751 26.5502C29.2247 27.218 28.8312 27.8228 28.3221 28.3222C27.8221 28.8306 27.2174 29.224 26.5501 29.4752C25.9131 29.7222 25.1871 29.8902 24.1231 29.9402C23.8561 29.9522 23.6351 29.9622 23.4111 29.9702L23.2171 29.9762C22.4876 29.994 21.7578 30.0017 21.0281 29.9992L20.2821 30.0002H18.9731C18.2434 30.0027 17.5136 29.995 16.7841 29.9772L16.5901 29.9712C16.3527 29.9626 16.1154 29.9526 15.8781 29.9412C14.8141 29.8912 14.0881 29.7212 13.4501 29.4752C12.7828 29.2246 12.1783 28.8311 11.6791 28.3222C11.1701 27.8225 10.7763 27.2178 10.5251 26.5502C10.2781 25.9132 10.1101 25.1872 10.0601 24.1232C10.049 23.8859 10.039 23.6486 10.0301 23.4112L10.0251 23.2172C10.0067 22.4877 9.99832 21.758 10.0001 21.0282V18.9722C9.9973 18.2428 10.0046 17.5134 10.0221 16.7842L10.0291 16.5902C10.0371 16.3662 10.0471 16.1442 10.0591 15.8782C10.1091 14.8132 10.2771 14.0882 10.5241 13.4502C10.7755 12.7829 11.1701 12.1787 11.6801 11.6802C12.179 11.171 12.7831 10.7768 13.4501 10.5252C14.0881 10.2782 14.8131 10.1102 15.8781 10.0602L16.5901 10.0302L16.7841 10.0252C17.5133 10.0068 18.2427 9.99847 18.9721 10.0002L21.0281 10.0012ZM20.0001 15.0012C19.3376 14.9919 18.6798 15.1143 18.0651 15.3613C17.4503 15.6083 16.8907 15.9751 16.4189 16.4403C15.9471 16.9055 15.5725 17.4598 15.3168 18.071C15.0611 18.6822 14.9294 19.3382 14.9294 20.0007C14.9294 20.6633 15.0611 21.3192 15.3168 21.9305C15.5725 22.5417 15.9471 23.096 16.4189 23.5612C16.8907 24.0264 17.4503 24.3931 18.0651 24.6402C18.6798 24.8872 19.3376 25.0096 20.0001 25.0002C21.3262 25.0002 22.5979 24.4734 23.5356 23.5358C24.4733 22.5981 25.0001 21.3263 25.0001 20.0002C25.0001 18.6741 24.4733 17.4024 23.5356 16.4647C22.5979 15.527 21.3262 15.0012 20.0001 15.0012ZM20.0001 17.0012C20.3986 16.9939 20.7946 17.066 21.1649 17.2134C21.5352 17.3608 21.8724 17.5806 22.1569 17.8598C22.4413 18.139 22.6673 18.4721 22.8215 18.8396C22.9758 19.2071 23.0553 19.6016 23.0554 20.0002C23.0554 20.3988 22.9761 20.7934 22.8219 21.1609C22.6678 21.5285 22.4419 21.8617 22.1576 22.141C21.8732 22.4203 21.5361 22.6401 21.1658 22.7876C20.7955 22.9352 20.3996 23.0074 20.0011 23.0002C19.2054 23.0002 18.4424 22.6842 17.8798 22.1216C17.3172 21.5589 17.0011 20.7959 17.0011 20.0002C17.0011 19.2046 17.3172 18.4415 17.8798 17.8789C18.4424 17.3163 19.2054 17.0002 20.0011 17.0002L20.0001 17.0012ZM25.2501 13.5012C24.9275 13.5141 24.6224 13.6514 24.3987 13.8842C24.175 14.117 24.0501 14.4274 24.0501 14.7502C24.0501 15.0731 24.175 15.3834 24.3987 15.6163C24.6224 15.8491 24.9275 15.9863 25.2501 15.9992C25.5816 15.9992 25.8996 15.8675 26.134 15.6331C26.3684 15.3987 26.5001 15.0808 26.5001 14.7492C26.5001 14.4177 26.3684 14.0998 26.134 13.8653C25.8996 13.6309 25.5816 13.4992 25.2501 13.4992V13.5012Z" fill="white"/>
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg width="40" height="40" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="40" height="40" rx="20" fill="#AAAAAA"/>
+                        <path d="M30.46 14C29.69 14.35 28.86 14.58 28 14.69C28.88 14.16 29.56 13.32 29.88 12.31C29.05 12.81 28.13 13.16 27.16 13.36C26.37 12.5 25.26 12 24 12C21.65 12 19.73 13.92 19.73 16.29C19.73 16.63 19.77 16.96 19.84 17.27C16.28 17.09 13.11 15.38 11 12.79C10.63 13.42 10.42 14.16 10.42 14.94C10.42 16.43 11.17 17.75 12.33 18.5C11.62 18.5 10.96 18.3 10.38 18V18.03C10.38 20.11 11.86 21.85 13.82 22.24C13.1908 22.4122 12.5301 22.4362 11.89 22.31C12.1616 23.1625 12.6936 23.9084 13.4111 24.4429C14.1285 24.9775 14.9955 25.2737 15.89 25.29C14.3737 26.4904 12.494 27.1393 10.56 27.13C10.22 27.13 9.88004 27.11 9.54004 27.07C11.44 28.29 13.7 29 16.12 29C24 29 28.33 22.46 28.33 16.79C28.33 16.6 28.33 16.42 28.32 16.23C29.16 15.63 29.88 14.87 30.46 14Z" fill="white"/>
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg width="40" height="40" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="40" height="40" rx="20" fill="#AAAAAA"/>
+                        <g clip-path="url(#clip0_68_942)">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M27.7771 12.43C28.0243 12.326 28.2947 12.2901 28.5604 12.3261C28.8261 12.3621 29.0773 12.4686 29.2878 12.6347C29.4984 12.8007 29.6606 13.0201 29.7575 13.27C29.8545 13.52 29.8827 13.7914 29.8391 14.056L27.5711 27.813C27.3511 29.14 25.8951 29.901 24.6781 29.24C23.6601 28.687 22.1481 27.835 20.7881 26.946C20.1081 26.501 18.0251 25.076 18.2811 24.062C18.5011 23.195 22.0011 19.937 24.0011 18C24.7861 17.239 24.4281 16.8 23.5011 17.5C21.1981 19.238 17.5031 21.881 16.2811 22.625C15.2031 23.281 14.6411 23.393 13.9691 23.281C12.7431 23.077 11.6061 22.761 10.6781 22.376C9.42414 21.856 9.48514 20.132 10.6771 19.63L27.7771 12.43Z" fill="white"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_68_942">
+                        <rect width="24" height="24" fill="white" transform="translate(8 8)"/>
+                        </clipPath>
+                        </defs>
+                    </svg>
+                </a>
+            </nav>
+        </div>
+        <div class="block">
+            
+            <div class="block_right">
+                <!-- HERO -->
+                <section class="hero">
+                        <div class="hero_left" id="animationContainer">
+                            <img src="images/hero_left.png" alt="">
+                        </div>
+                        <div class="hero_right">
+                            <div class="hero_texts">
+                                <div class="hero_title">
+                                    Our vision
+                                </div>
+                                <div class="hero_description">
+                                    <span>Digital Uzbekistan 2030</span>: Transforming Uzbekistan into an <span>IT-Hub</span> by boosting IT service exports to 5 billion and elevating the country’s position to the <span>top-30</span> in the UN E-Gov Development Index
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="container mobile">
+                            <div class="hero_right">
+                                <div class="hero_texts">
+                                    <div class="hero_title">
+                                        Our vision
+                                    </div>
+                                    <div class="hero_description">
+                                        <span>Digital Uzbekistan 2030</span>: Transforming Uzbekistan into an <span>IT-Hub</span> by boosting IT service exports to 5 billion and elevating the country’s position to the <span>top-30</span> in the UN E-Gov Development Index
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </section>
+                <!-- HERO END -->
+
+                <!-- DEVELOPMENT PROGRAM -->
+                <section class="development_program">
+                    <div class="container">
+                        <div class="section_title">
+                            ПРОГРАММа развития
+                        </div>
+                        <div class="text">
+                            Документы для ознакомления и скачивания 
+                        </div>
+
+                        <div class="row">
+                            <div class="item">
+                                <span>
+                                    Стратегия развития цифрового правительства до 2030 года
+                                </span>
+                                
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="38" viewBox="0 0 32 38" fill="none">
+                                        <path d="M19.1255 10.9408V0.718862C20.5523 1.25957 21.865 2.09251 22.9777 3.20363L28.4223 8.65135C29.5349 9.76246 30.3679 11.0752 30.9086 12.502H20.6882C19.8256 12.502 19.1255 11.8003 19.1255 10.9392L19.1255 10.9408ZM31.5899 15.629H20.6882C18.1035 15.629 16 13.5255 16 10.9408V0.0375059C15.7484 0.0203157 15.4968 0 15.2421 0H8.18628C3.87779 0.00156275 0.372559 3.5068 0.372559 7.81528V29.6937C0.372559 34.0022 3.87779 37.5074 8.18628 37.5074H23.8137C28.1222 37.5074 31.6274 34.0022 31.6274 29.6937V16.3869C31.6274 16.1322 31.6071 15.8806 31.5899 15.629ZM21.7931 28.9217L19.2724 31.444C18.3707 32.3457 17.1846 32.7973 16 32.7973C14.8154 32.7973 13.6293 32.3457 12.7276 31.444L10.2069 28.9217C9.59587 28.3107 9.59587 27.3215 10.2069 26.712C10.8179 26.101 11.8056 26.101 12.4166 26.712L14.4373 28.7326V21.8597C14.4373 20.997 15.1358 20.2969 16 20.2969C16.8642 20.2969 17.5627 20.997 17.5627 21.8597V28.7326L19.5834 26.712C20.1944 26.101 21.1821 26.101 21.7931 26.712C22.4041 27.3215 22.4041 28.3107 21.7931 28.9217Z" fill="url(#paint0_linear_202_900)"/>
+                                        <defs>
+                                          <linearGradient id="paint0_linear_202_900" x1="-5.7388" y1="55.198" x2="31.6274" y2="55.198" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#0094CB"/>
+                                            <stop offset="1" stop-color="#96DCCB"/>
+                                          </linearGradient>
+                                        </defs>
+                                    </svg>
+                                </a>
+                            </div>
+
+                            <div class="item">
+                                <span>
+                                    Белая книга развития <br> электронного правительства и  <br>ИКТ-инфраструктуры Узбекистана
+                                </span>
+                                
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="38" viewBox="0 0 32 38" fill="none">
+                                        <path d="M19.1255 10.9408V0.718862C20.5523 1.25957 21.865 2.09251 22.9777 3.20363L28.4223 8.65135C29.5349 9.76246 30.3679 11.0752 30.9086 12.502H20.6882C19.8256 12.502 19.1255 11.8003 19.1255 10.9392L19.1255 10.9408ZM31.5899 15.629H20.6882C18.1035 15.629 16 13.5255 16 10.9408V0.0375059C15.7484 0.0203157 15.4968 0 15.2421 0H8.18628C3.87779 0.00156275 0.372559 3.5068 0.372559 7.81528V29.6937C0.372559 34.0022 3.87779 37.5074 8.18628 37.5074H23.8137C28.1222 37.5074 31.6274 34.0022 31.6274 29.6937V16.3869C31.6274 16.1322 31.6071 15.8806 31.5899 15.629ZM21.7931 28.9217L19.2724 31.444C18.3707 32.3457 17.1846 32.7973 16 32.7973C14.8154 32.7973 13.6293 32.3457 12.7276 31.444L10.2069 28.9217C9.59587 28.3107 9.59587 27.3215 10.2069 26.712C10.8179 26.101 11.8056 26.101 12.4166 26.712L14.4373 28.7326V21.8597C14.4373 20.997 15.1358 20.2969 16 20.2969C16.8642 20.2969 17.5627 20.997 17.5627 21.8597V28.7326L19.5834 26.712C20.1944 26.101 21.1821 26.101 21.7931 26.712C22.4041 27.3215 22.4041 28.3107 21.7931 28.9217Z" fill="url(#paint0_linear_202_900)"/>
+                                        <defs>
+                                          <linearGradient id="paint0_linear_202_900" x1="-5.7388" y1="55.198" x2="31.6274" y2="55.198" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#0094CB"/>
+                                            <stop offset="1" stop-color="#96DCCB"/>
+                                          </linearGradient>
+                                        </defs>
+                                    </svg>
+                                </a>
+                            </div>
+
+                            <div class="item">
+                                <span>
+                                    презентация ЦЭП <br> по цифровому Узбекистану
+                                </span>
+                                
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="38" viewBox="0 0 32 38" fill="none">
+                                        <path d="M19.1255 10.9408V0.718862C20.5523 1.25957 21.865 2.09251 22.9777 3.20363L28.4223 8.65135C29.5349 9.76246 30.3679 11.0752 30.9086 12.502H20.6882C19.8256 12.502 19.1255 11.8003 19.1255 10.9392L19.1255 10.9408ZM31.5899 15.629H20.6882C18.1035 15.629 16 13.5255 16 10.9408V0.0375059C15.7484 0.0203157 15.4968 0 15.2421 0H8.18628C3.87779 0.00156275 0.372559 3.5068 0.372559 7.81528V29.6937C0.372559 34.0022 3.87779 37.5074 8.18628 37.5074H23.8137C28.1222 37.5074 31.6274 34.0022 31.6274 29.6937V16.3869C31.6274 16.1322 31.6071 15.8806 31.5899 15.629ZM21.7931 28.9217L19.2724 31.444C18.3707 32.3457 17.1846 32.7973 16 32.7973C14.8154 32.7973 13.6293 32.3457 12.7276 31.444L10.2069 28.9217C9.59587 28.3107 9.59587 27.3215 10.2069 26.712C10.8179 26.101 11.8056 26.101 12.4166 26.712L14.4373 28.7326V21.8597C14.4373 20.997 15.1358 20.2969 16 20.2969C16.8642 20.2969 17.5627 20.997 17.5627 21.8597V28.7326L19.5834 26.712C20.1944 26.101 21.1821 26.101 21.7931 26.712C22.4041 27.3215 22.4041 28.3107 21.7931 28.9217Z" fill="url(#paint0_linear_202_900)"/>
+                                        <defs>
+                                          <linearGradient id="paint0_linear_202_900" x1="-5.7388" y1="55.198" x2="31.6274" y2="55.198" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#0094CB"/>
+                                            <stop offset="1" stop-color="#96DCCB"/>
+                                          </linearGradient>
+                                        </defs>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- DEVELOPMENT PROGRAM END -->
+
+                <!-- HISTORY -->
+                <section class="history">
+                    <div class="bg_right">
+                        <img src="images/history_bg.png" alt="">
+                    </div>
+                    <div class="container">
+                        <div class="section_header">
+                            <div class="section_title">
+                                Таймлайн истории
+                            </div>
+                            <div class="text">становления цифрового правительства в Узбекистане</div>
+                            <div class="bg_right_mobile">
+                                <img src="images/history_bg_mobile.png" alt="" class="mobile_bg">
+                            </div>
+                        </div>
+
+                        <div class="row mobile_none">
+                            <div class="border">
+                                <div class="item">
+                                    <div class="row_block">
+                                        <div class="head">
+                                            <span>01</span>
+                                            <span>STEP</span>
+                                        </div>
+                                        <div class="dot">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M10.2235 20.3439C15.4419 20.3439 19.698 16.0879 19.698 10.8675C19.698 5.64915 15.4419 1.39307 10.2235 1.39307C5.00516 1.39307 0.74707 5.64915 0.74707 10.8675C0.74707 16.0879 5.00516 20.3439 10.2235 20.3439Z" fill="url(#paint0_linear_202_838)" stroke="black"/>
+                                                <defs>
+                                                  <linearGradient id="paint0_linear_202_838" x1="13.6457" y1="31.3264" x2="8.42623" y2="31.3264" gradientUnits="userSpaceOnUse">
+                                                    <stop stop-color="#0094CB"/>
+                                                    <stop offset="0.707081" stop-color="#4ACF78"/>
+                                                    <stop offset="1" stop-color="#0094CB"/>
+                                                  </linearGradient>
+                                                </defs>
+                                              </svg>
+                                        </div>
+                                        <div class="body">
+                                            <span>1997</span>
+                                            развитие и совершенствование почтовой связи, информационных систем и телекоммуникаций
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="row_block">
+                                        <div class="head">
+                                            <span>01</span>
+                                            <span>STEP</span>
+                                        </div>
+                                        <div class="dot">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M10.2235 20.3439C15.4419 20.3439 19.698 16.0879 19.698 10.8675C19.698 5.64915 15.4419 1.39307 10.2235 1.39307C5.00516 1.39307 0.74707 5.64915 0.74707 10.8675C0.74707 16.0879 5.00516 20.3439 10.2235 20.3439Z" fill="url(#paint0_linear_202_838)" stroke="black"/>
+                                                <defs>
+                                                  <linearGradient id="paint0_linear_202_838" x1="13.6457" y1="31.3264" x2="8.42623" y2="31.3264" gradientUnits="userSpaceOnUse">
+                                                    <stop stop-color="#0094CB"/>
+                                                    <stop offset="0.707081" stop-color="#4ACF78"/>
+                                                    <stop offset="1" stop-color="#0094CB"/>
+                                                  </linearGradient>
+                                                </defs>
+                                              </svg>
+                                        </div>
+                                        <div class="body">
+                                            <span>2002</span>
+                                            развитие компьютеризации
+и внедрение
+информационных систем
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="row_block">
+                                        <div class="head">
+                                            <span>01</span>
+                                            <span>STEP</span>
+                                        </div>
+                                        <div class="dot">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M10.2235 20.3439C15.4419 20.3439 19.698 16.0879 19.698 10.8675C19.698 5.64915 15.4419 1.39307 10.2235 1.39307C5.00516 1.39307 0.74707 5.64915 0.74707 10.8675C0.74707 16.0879 5.00516 20.3439 10.2235 20.3439Z" fill="url(#paint0_linear_202_838)" stroke="black"/>
+                                                <defs>
+                                                  <linearGradient id="paint0_linear_202_838" x1="13.6457" y1="31.3264" x2="8.42623" y2="31.3264" gradientUnits="userSpaceOnUse">
+                                                    <stop stop-color="#0094CB"/>
+                                                    <stop offset="0.707081" stop-color="#4ACF78"/>
+                                                    <stop offset="1" stop-color="#0094CB"/>
+                                                  </linearGradient>
+                                                </defs>
+                                              </svg>
+                                        </div>
+                                        <div class="body">
+                                            <span>2013</span>
+                                            начало развития Электронного правительства
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="border second">
+                                <div class="item">
+                                    <div class="row_block">
+                                        <div class="head">
+                                            <span>01</span>
+                                            <span>STEP</span>
+                                        </div>
+                                        <div class="dot">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M10.2235 20.3439C15.4419 20.3439 19.698 16.0879 19.698 10.8675C19.698 5.64915 15.4419 1.39307 10.2235 1.39307C5.00516 1.39307 0.74707 5.64915 0.74707 10.8675C0.74707 16.0879 5.00516 20.3439 10.2235 20.3439Z" fill="url(#paint0_linear_202_838)" stroke="black"/>
+                                                <defs>
+                                                  <linearGradient id="paint0_linear_202_838" x1="13.6457" y1="31.3264" x2="8.42623" y2="31.3264" gradientUnits="userSpaceOnUse">
+                                                    <stop stop-color="#0094CB"/>
+                                                    <stop offset="0.707081" stop-color="#4ACF78"/>
+                                                    <stop offset="1" stop-color="#0094CB"/>
+                                                  </linearGradient>
+                                                </defs>
+                                              </svg>
+                                        </div>
+                                        <div class="body">
+                                            <span>2015</span>
+                                            запуск межведомственной интеграционной <br> платформы
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="row_block">
+                                        <div class="head">
+                                            <span>01</span>
+                                            <span>STEP</span>
+                                        </div>
+                                        <div class="dot">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M10.2235 20.3439C15.4419 20.3439 19.698 16.0879 19.698 10.8675C19.698 5.64915 15.4419 1.39307 10.2235 1.39307C5.00516 1.39307 0.74707 5.64915 0.74707 10.8675C0.74707 16.0879 5.00516 20.3439 10.2235 20.3439Z" fill="url(#paint0_linear_202_838)" stroke="black"/>
+                                                <defs>
+                                                  <linearGradient id="paint0_linear_202_838" x1="13.6457" y1="31.3264" x2="8.42623" y2="31.3264" gradientUnits="userSpaceOnUse">
+                                                    <stop stop-color="#0094CB"/>
+                                                    <stop offset="0.707081" stop-color="#4ACF78"/>
+                                                    <stop offset="1" stop-color="#0094CB"/>
+                                                  </linearGradient>
+                                                </defs>
+                                              </svg>
+                                        </div>
+                                        <div class="body">
+                                            <span>2017 </span>
+                                            новая версия <br>
+                                            Единого портала <br>
+                                            государственных услуг
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="row_block">
+                                        <div class="head">
+                                            <span>01</span>
+                                            <span>STEP</span>
+                                        </div>
+                                        <div class="dot">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M10.2235 20.3439C15.4419 20.3439 19.698 16.0879 19.698 10.8675C19.698 5.64915 15.4419 1.39307 10.2235 1.39307C5.00516 1.39307 0.74707 5.64915 0.74707 10.8675C0.74707 16.0879 5.00516 20.3439 10.2235 20.3439Z" fill="url(#paint0_linear_202_838)" stroke="black"/>
+                                                <defs>
+                                                  <linearGradient id="paint0_linear_202_838" x1="13.6457" y1="31.3264" x2="8.42623" y2="31.3264" gradientUnits="userSpaceOnUse">
+                                                    <stop stop-color="#0094CB"/>
+                                                    <stop offset="0.707081" stop-color="#4ACF78"/>
+                                                    <stop offset="1" stop-color="#0094CB"/>
+                                                  </linearGradient>
+                                                </defs>
+                                              </svg>
+                                        </div>
+                                        <div class="body">
+                                            <span>2002</span>
+                                            переход на интегрированные системы электронного правительства
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="row_block">
+                                        <div class="head">
+                                            <span>01</span>
+                                            <span>STEP</span>
+                                        </div>
+                                        <div class="dot">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M10.2235 20.3439C15.4419 20.3439 19.698 16.0879 19.698 10.8675C19.698 5.64915 15.4419 1.39307 10.2235 1.39307C5.00516 1.39307 0.74707 5.64915 0.74707 10.8675C0.74707 16.0879 5.00516 20.3439 10.2235 20.3439Z" fill="url(#paint0_linear_202_838)" stroke="black"/>
+                                                <defs>
+                                                  <linearGradient id="paint0_linear_202_838" x1="13.6457" y1="31.3264" x2="8.42623" y2="31.3264" gradientUnits="userSpaceOnUse">
+                                                    <stop stop-color="#0094CB"/>
+                                                    <stop offset="0.707081" stop-color="#4ACF78"/>
+                                                    <stop offset="1" stop-color="#0094CB"/>
+                                                  </linearGradient>
+                                                </defs>
+                                              </svg>
+                                        </div>
+                                        <div class="body">
+                                            <span>2023</span>
+                                            переход на умное <br>Цифровое правительство
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="overflow_scroll">
+                            <div class="row desc_none">
+                                <div class="mobile_item">
+                                    <div class="head">
+                                        <span>01</span>
+                                        <span>STEP</span>
+                                    </div>
+                                    <div class="dot_center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10.5011 20C16.0083 20 20.5 15.5083 20.5 9.99895C20.5 4.4917 16.0083 0 10.5011 0C4.99381 0 0.5 4.4917 0.5 9.99895C0.5 15.5083 4.99381 20 10.5011 20Z" fill="url(#paint0_linear_202_1249)"/>
+                                            <defs>
+                                              <linearGradient id="paint0_linear_202_1249" x1="-3.41066" y1="29.4331" x2="20.5" y2="29.4331" gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#0094CB"/>
+                                                <stop offset="1" stop-color="#96DCCB"/>
+                                              </linearGradient>
+                                            </defs>
+                                        </svg>
+                                    </div>
+                                    <div class="card_description">
+                                        <div class="number">
+                                            1997
+                                        </div>
+                                        <div class="text">
+                                            Развитие и <br> совершенствование почтовой <br> связи, информационных <br>систем и телекоммуникаций
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mobile_item">
+                                    <div class="head">
+                                        <span>01</span>
+                                        <span>STEP</span>
+                                    </div>
+                                    <div class="dot_center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10.5011 20C16.0083 20 20.5 15.5083 20.5 9.99895C20.5 4.4917 16.0083 0 10.5011 0C4.99381 0 0.5 4.4917 0.5 9.99895C0.5 15.5083 4.99381 20 10.5011 20Z" fill="url(#paint0_linear_202_1249)"/>
+                                            <defs>
+                                              <linearGradient id="paint0_linear_202_1249" x1="-3.41066" y1="29.4331" x2="20.5" y2="29.4331" gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#0094CB"/>
+                                                <stop offset="1" stop-color="#96DCCB"/>
+                                              </linearGradient>
+                                            </defs>
+                                        </svg>
+                                    </div>
+                                    <div class="card_description">
+                                        <div class="number">
+                                            2002
+                                        </div>
+                                        <div class="text">
+                                            Развитие компьютеризации и <br> внедрение информационных <br> систем
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mobile_item">
+                                    <div class="head">
+                                        <span>01</span>
+                                        <span>STEP</span>
+                                    </div>
+                                    <div class="dot_center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10.5011 20C16.0083 20 20.5 15.5083 20.5 9.99895C20.5 4.4917 16.0083 0 10.5011 0C4.99381 0 0.5 4.4917 0.5 9.99895C0.5 15.5083 4.99381 20 10.5011 20Z" fill="url(#paint0_linear_202_1249)"/>
+                                            <defs>
+                                              <linearGradient id="paint0_linear_202_1249" x1="-3.41066" y1="29.4331" x2="20.5" y2="29.4331" gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#0094CB"/>
+                                                <stop offset="1" stop-color="#96DCCB"/>
+                                              </linearGradient>
+                                            </defs>
+                                        </svg>
+                                    </div>
+                                    <div class="card_description">
+                                        <div class="number">
+                                            1997
+                                        </div>
+                                        <div class="text">
+                                            Развитие и <br> совершенствование почтовой <br> связи, информационных <br>систем и телекоммуникаций
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="charts">
+                    <div class="container">
+                        <div class="section_header">
+                            <div class="section_title">
+                                ПОЗИЦИЯ УЗБЕКИСТана
+                            </div>
+                            <div class="text">
+                                в Индексе развития электронного <br>правительства ООН
+                            </div>
+                        </div>
+                        <div class="mobile_overflow">
+                            <div class="chart_container">
+                                <div class="chart">
+                                    <div id="labels-container"></div>
+                                    <canvas id="myChart"
+                                    width="900"
+                                    height="230"
+                                    aria-label="Hello ARIA World"
+                                    role="img"></canvas>
+                                </div>
+                            </div>
+                            <div class="mobile_chart_bg">
+                                <img src="images/hero_left_mobile.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- APPROBATION -->
+                <section class="approbation">
+                    <div class="bg_left">
+                        <img src="images/history_bg_left.png" alt="">
+                    </div>
+                    <div class="container">
+                        <div class="section_header">
+                            <div class="section_title">
+                                Aпробация
+                            </div>
+                            <div class="text">государственных услуг</div>
+                        </div>
+                        <div class="overflow_scroll">
+                            <div class="row">
+                                <div class="item">
+                                    <div class="step">
+                                        Шаг 1
+                                    </div>
+                                    <div class="item_action">
+                                        <a href="#" class="action">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 46 46" fill="none">
+                                            <path d="M23 0.00219727C26.1043 0.00219727 29.1166 0.610516 31.9531 1.81027C34.6921 2.96877 37.1517 4.62695 39.2635 6.73874C41.3753 8.85054 43.0334 11.3101 44.1919 14.0491C45.3917 16.8856 46 19.8979 46 23.0022C46 26.1065 45.3917 29.1188 44.1919 31.9553C43.0334 34.6943 41.3753 37.1539 39.2635 39.2657C37.1517 41.3774 34.6921 43.0356 31.9531 44.1941C29.1166 45.3939 26.1043 46.0022 23 46.0022C19.8957 46.0022 16.8834 45.3939 14.0469 44.1941C11.3079 43.0356 8.84834 41.3774 6.73654 39.2657C4.62475 37.1539 2.96657 34.6943 1.80807 31.9553C0.608318 29.1188 0 26.1065 0 23.0022C0 19.8979 0.608318 16.8856 1.80807 14.0491C2.96657 11.3101 4.62475 8.85054 6.73654 6.73874C8.84834 4.62695 11.3079 2.96877 14.0469 1.81027C16.8834 0.610516 19.8957 0.00219727 23 0.00219727ZM23 43.0022C34.028 43.0022 43 34.0302 43 23.0022C43 11.9742 34.028 3.0022 23 3.0022C11.972 3.0022 3 11.9742 3 23.0022C3 34.0302 11.972 43.0022 23 43.0022Z" fill="url(#paint0_linear_202_1056)"/>
+                                            <path d="M23 33.1021C22.6161 33.1021 22.2322 32.9557 21.9393 32.6628C21.3536 32.077 21.3536 31.1272 21.9393 30.5414L29.4787 23.0021L21.9393 15.4628C21.3536 14.877 21.3536 13.9272 21.9393 13.3414C22.5251 12.7557 23.4749 12.7557 24.0607 13.3414L32.6607 21.9414C33.2465 22.5272 33.2465 23.477 32.6607 24.0628L24.0607 32.6628C23.7678 32.9557 23.3839 33.1021 23 33.1021Z" fill="url(#paint1_linear_202_1056)"/>
+                                            <path d="M31.5999 24.5022H14.3999C13.5715 24.5022 12.8999 23.8306 12.8999 23.0022C12.8999 22.1738 13.5715 21.5022 14.3999 21.5022H31.5999C32.4283 21.5022 33.0999 22.1738 33.0999 23.0022C33.0999 23.8306 32.4283 24.5022 31.5999 24.5022Z" fill="url(#paint2_linear_202_1056)"/>
+                                            <defs>
+                                              <linearGradient id="paint0_linear_202_1056" x1="-8.99451" y1="67.6984" x2="46" y2="67.6984" gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#0094CB"/>
+                                                <stop offset="1" stop-color="#96DCCB"/>
+                                              </linearGradient>
+                                              <linearGradient id="paint1_linear_202_1056" x1="19.2318" y1="42.6296" x2="33.1" y2="42.6296" gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#0094CB"/>
+                                                <stop offset="1" stop-color="#96DCCB"/>
+                                              </linearGradient>
+                                              <linearGradient id="paint2_linear_202_1056" x1="8.95014" y1="25.9172" x2="33.0999" y2="25.9172" gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#0094CB"/>
+                                                <stop offset="1" stop-color="#96DCCB"/>
+                                              </linearGradient>
+                                            </defs>
+                                          </svg>
+                                        </a>
+                                    </div>
+                                    <div class="text">
+                                        Протестируйте <br> услугу
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="step">
+                                        Шаг 2
+                                    </div>
+                                    <div class="item_action">
+                                        <a href="#" class="action">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 46 46" fill="none">
+                                            <path d="M23 0.00219727C26.1043 0.00219727 29.1166 0.610516 31.9531 1.81027C34.6921 2.96877 37.1517 4.62695 39.2635 6.73874C41.3753 8.85054 43.0334 11.3101 44.1919 14.0491C45.3917 16.8856 46 19.8979 46 23.0022C46 26.1065 45.3917 29.1188 44.1919 31.9553C43.0334 34.6943 41.3753 37.1539 39.2635 39.2657C37.1517 41.3774 34.6921 43.0356 31.9531 44.1941C29.1166 45.3939 26.1043 46.0022 23 46.0022C19.8957 46.0022 16.8834 45.3939 14.0469 44.1941C11.3079 43.0356 8.84834 41.3774 6.73654 39.2657C4.62475 37.1539 2.96657 34.6943 1.80807 31.9553C0.608318 29.1188 0 26.1065 0 23.0022C0 19.8979 0.608318 16.8856 1.80807 14.0491C2.96657 11.3101 4.62475 8.85054 6.73654 6.73874C8.84834 4.62695 11.3079 2.96877 14.0469 1.81027C16.8834 0.610516 19.8957 0.00219727 23 0.00219727ZM23 43.0022C34.028 43.0022 43 34.0302 43 23.0022C43 11.9742 34.028 3.0022 23 3.0022C11.972 3.0022 3 11.9742 3 23.0022C3 34.0302 11.972 43.0022 23 43.0022Z" fill="url(#paint0_linear_202_1056)"/>
+                                            <path d="M23 33.1021C22.6161 33.1021 22.2322 32.9557 21.9393 32.6628C21.3536 32.077 21.3536 31.1272 21.9393 30.5414L29.4787 23.0021L21.9393 15.4628C21.3536 14.877 21.3536 13.9272 21.9393 13.3414C22.5251 12.7557 23.4749 12.7557 24.0607 13.3414L32.6607 21.9414C33.2465 22.5272 33.2465 23.477 32.6607 24.0628L24.0607 32.6628C23.7678 32.9557 23.3839 33.1021 23 33.1021Z" fill="url(#paint1_linear_202_1056)"/>
+                                            <path d="M31.5999 24.5022H14.3999C13.5715 24.5022 12.8999 23.8306 12.8999 23.0022C12.8999 22.1738 13.5715 21.5022 14.3999 21.5022H31.5999C32.4283 21.5022 33.0999 22.1738 33.0999 23.0022C33.0999 23.8306 32.4283 24.5022 31.5999 24.5022Z" fill="url(#paint2_linear_202_1056)"/>
+                                            <defs>
+                                              <linearGradient id="paint0_linear_202_1056" x1="-8.99451" y1="67.6984" x2="46" y2="67.6984" gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#0094CB"/>
+                                                <stop offset="1" stop-color="#96DCCB"/>
+                                              </linearGradient>
+                                              <linearGradient id="paint1_linear_202_1056" x1="19.2318" y1="42.6296" x2="33.1" y2="42.6296" gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#0094CB"/>
+                                                <stop offset="1" stop-color="#96DCCB"/>
+                                              </linearGradient>
+                                              <linearGradient id="paint2_linear_202_1056" x1="8.95014" y1="25.9172" x2="33.0999" y2="25.9172" gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#0094CB"/>
+                                                <stop offset="1" stop-color="#96DCCB"/>
+                                              </linearGradient>
+                                            </defs>
+                                          </svg>
+                                        </a>
+                                    </div>
+                                    <div class="text">
+                                        Протестируйте<br> услугу
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="step">
+                                        Шаг 3
+                                    </div>
+                                    <div class="item_action">
+                                        <a href="#" class="action">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 46 46" fill="none">
+                                            <path d="M23 0.00219727C26.1043 0.00219727 29.1166 0.610516 31.9531 1.81027C34.6921 2.96877 37.1517 4.62695 39.2635 6.73874C41.3753 8.85054 43.0334 11.3101 44.1919 14.0491C45.3917 16.8856 46 19.8979 46 23.0022C46 26.1065 45.3917 29.1188 44.1919 31.9553C43.0334 34.6943 41.3753 37.1539 39.2635 39.2657C37.1517 41.3774 34.6921 43.0356 31.9531 44.1941C29.1166 45.3939 26.1043 46.0022 23 46.0022C19.8957 46.0022 16.8834 45.3939 14.0469 44.1941C11.3079 43.0356 8.84834 41.3774 6.73654 39.2657C4.62475 37.1539 2.96657 34.6943 1.80807 31.9553C0.608318 29.1188 0 26.1065 0 23.0022C0 19.8979 0.608318 16.8856 1.80807 14.0491C2.96657 11.3101 4.62475 8.85054 6.73654 6.73874C8.84834 4.62695 11.3079 2.96877 14.0469 1.81027C16.8834 0.610516 19.8957 0.00219727 23 0.00219727ZM23 43.0022C34.028 43.0022 43 34.0302 43 23.0022C43 11.9742 34.028 3.0022 23 3.0022C11.972 3.0022 3 11.9742 3 23.0022C3 34.0302 11.972 43.0022 23 43.0022Z" fill="url(#paint0_linear_202_1056)"/>
+                                            <path d="M23 33.1021C22.6161 33.1021 22.2322 32.9557 21.9393 32.6628C21.3536 32.077 21.3536 31.1272 21.9393 30.5414L29.4787 23.0021L21.9393 15.4628C21.3536 14.877 21.3536 13.9272 21.9393 13.3414C22.5251 12.7557 23.4749 12.7557 24.0607 13.3414L32.6607 21.9414C33.2465 22.5272 33.2465 23.477 32.6607 24.0628L24.0607 32.6628C23.7678 32.9557 23.3839 33.1021 23 33.1021Z" fill="url(#paint1_linear_202_1056)"/>
+                                            <path d="M31.5999 24.5022H14.3999C13.5715 24.5022 12.8999 23.8306 12.8999 23.0022C12.8999 22.1738 13.5715 21.5022 14.3999 21.5022H31.5999C32.4283 21.5022 33.0999 22.1738 33.0999 23.0022C33.0999 23.8306 32.4283 24.5022 31.5999 24.5022Z" fill="url(#paint2_linear_202_1056)"/>
+                                            <defs>
+                                              <linearGradient id="paint0_linear_202_1056" x1="-8.99451" y1="67.6984" x2="46" y2="67.6984" gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#0094CB"/>
+                                                <stop offset="1" stop-color="#96DCCB"/>
+                                              </linearGradient>
+                                              <linearGradient id="paint1_linear_202_1056" x1="19.2318" y1="42.6296" x2="33.1" y2="42.6296" gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#0094CB"/>
+                                                <stop offset="1" stop-color="#96DCCB"/>
+                                              </linearGradient>
+                                              <linearGradient id="paint2_linear_202_1056" x1="8.95014" y1="25.9172" x2="33.0999" y2="25.9172" gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#0094CB"/>
+                                                <stop offset="1" stop-color="#96DCCB"/>
+                                              </linearGradient>
+                                            </defs>
+                                          </svg>
+                                        </a>
+                                    </div>
+                                    <div class="text">
+                                        Дайте предложения <br>
+                                        по улучшению
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- APPROBATION END -->
+
+                <!-- NEWS -->
+                <section class="news">
+                    <div class="container">
+                        <div class="row">
+                            <a href="#" class="card_item">
+                                <div class="card_image">
+                                    <img src="images/news_image.png" alt="">
+                                </div>
+                                <div class="card_actions">
+                                    <div class="card_header">
+                                        <div class="card_date">
+                                            <span>
+                                                20
+                                            </span>
+                                            <span>
+                                                ЯНв
+                                            </span>
+                                        </div>
+                                        <div class="news_title">
+                                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
+                                        </div>
+                                    </div>
+                                    <div class="news_text">
+                                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+                                    </div>
+                                    <div class="card_action">
+                                        <div class="date">
+                                            11.12.2023
+                                        </div>
+                                        <div class="economic">
+                                            Экономика
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="#" class="card_item">
+                                <div class="card_image">
+                                    <img src="images/news_image.png" alt="">
+                                </div>
+                                <div class="card_actions">
+                                    <div class="card_header">
+                                        <div class="card_date">
+                                            <span>
+                                                20
+                                            </span>
+                                            <span>
+                                                ЯНв
+                                            </span>
+                                        </div>
+                                        <div class="news_title">
+                                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
+                                        </div>
+                                    </div>
+                                    <div class="news_text">
+                                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+                                    </div>
+                                    <div class="card_action">
+                                        <div class="date">
+                                            11.12.2023
+                                        </div>
+                                        <div class="economic">
+                                            Экономика
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="#" class="card_item">
+                                <div class="card_image">
+                                    <img src="images/news_image.png" alt="">
+                                </div>
+                                <div class="card_actions">
+                                    <div class="card_header">
+                                        <div class="card_date">
+                                            <span>
+                                                20
+                                            </span>
+                                            <span>
+                                                ЯНв
+                                            </span>
+                                        </div>
+                                        <div class="news_title">
+                                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
+                                        </div>
+                                    </div>
+                                    <div class="news_text">
+                                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+                                    </div>
+                                    <div class="card_action">
+                                        <div class="date">
+                                            11.12.2023
+                                        </div>
+                                        <div class="economic">
+                                            Экономика
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+                <!-- NEWS END -->
+
+                
+                
+            </div>
+            
+        </div>
+        <!-- FOOTER -->
+        <footer>
+            <div class="container">
+                <img src="images/footer_mobile.png" alt="" class="footer_mobile_bg">
+                <div class="row_global">
+                    <div class="row">
+                        <div class="item">
+                            <div class="number">
+                                256
+                            </div>
+                            <div class="text">
+                                Веб сайтов
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="number">
+                                30
+                            </div>
+                            <div class="text">
+                                Организаций
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="item">
+                            <div class="number">
+                                56
+                            </div>
+                            <div class="text">
+                                Систем
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="number">
+                                30
+                            </div>
+                            <div class="text">
+                                Мобильных <br>приложений
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="logo_text">
+                    ЦифровоЕ правительствО
+                    <span>Республики Узбекистан</span>
+                </div>
+
+                <div class="footer_rights_reserved">
+                    <div class="footer_logo">
+                        <img src="images/uzinfo_logo.png" alt="">
+                    </div>
+                    <div class="text">
+                        © 2020-2022 все права защищены
+                    </div>
+                    <div class="window_action">
+                        Внимание! Если Вы нашли ошибку в тексте, выделите её и нажмите Ctrl+Enter для уведомления администрации
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- FOOTER END -->
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
